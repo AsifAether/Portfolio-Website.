@@ -1,0 +1,462 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #1f5bd2;
+    --background-color: #e4e3e3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(13, 13, 13);
+    color: #fffbfb;
+}
+a{
+    text-decoration: none;
+}
+/*NAVBAR*/
+nav{
+    margin-top: 20px;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    height: 60px;  
+}
+nav .left a {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 600;
+}
+nav .left a:hover {
+    color:rgb(161, 255, 239);
+    transition: 1s;
+}
+nav .right a {
+    color: rgb(252, 252, 252);
+    margin: 0 10px;
+}
+nav .right a:hover {
+    color:rgb(123, 215, 199);
+    transition: 1s;
+}
+nav .right a:last-child{
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+nav .right a span{
+    margin-left: 5px;
+}
+
+/*SECTION 01 hero*/
+
+.hero-section {
+    background: url(u.webp) no-repeat center center; /* Centers image */
+    background-size: cover; /* Ensures full image is visible without cropping */
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    cursor: default;
+    padding: 50px;
+   
+    box-sizing: border-box;
+    border-radius: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+
+.hero-section .text{
+    text-align: justify;
+    padding-right: 500px;
+    flex: 5;
+}
+.hero-section h2{
+    font-size: 50px;
+} 
+.hero-section .highlight-1{
+    color: rgb(251, 70, 106);
+    text-shadow: rgba(240, 46, 82, 0.4) 5px 5px, 
+    rgba(240, 46, 62, 0.3) 10px 10px,
+     rgba(240, 46, 82, 0.2) 15px 15px;
+     transition: transform 0.3s ease-in-out;
+} 
+.hero-section .highlight-1:hover{
+    transform: scale(1.1);
+    text-shadow: rgba(240, 46, 46, 0.4) -5px 5px,
+     rgba(240, 46, 91, 0.3) -10px 10px,
+     rgba(240, 46, 98, 0.2) -15px 15px;
+    transition: 1s;
+}
+
+.hero-section .highlight-2{
+    color: rgb(255, 83, 109);
+    font-size: 20px;
+} 
+.hero-section .links{
+    margin-top: 25px;
+}
+
+.hero-section a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid;
+    font-weight: bold;
+    border-color: rgb(224, 74, 101);
+    color: rgb(224, 74, 101);
+    text-shadow: #ff4451;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.hero-section a:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    color:rgb(185, 82, 106);
+    border: 2px solid;
+    box-shadow: rgba(240, 46, 107, 0.4) 3px 3px, rgba(240, 46, 69, 0.3) 6px 6px, 
+    rgba(240, 46, 69, 0.2) 9px 9px,
+     rgba(240, 46, 65, 0.1) 12px 12px,
+      rgba(240, 46, 85, 0.05) 15px 15px;
+}
+
+/* Section 2: skills*/
+.skills-section {
+    margin: 100px;
+    background-color: #171717;
+    backdrop-filter: blur(90px);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 50px;
+    padding: 50px 50px;
+    margin-bottom: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+.skills-section:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    border: 2px solid #d75e7a;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: rgba(240, 46, 46, 0.4) 0px 5px,
+     rgba(240, 46, 75, 0.3) 0px 10px, 
+    rgba(240, 46, 72, 0.2) 0px 15px,
+     rgba(240, 46, 65, 0.1) 0px 20px,
+      rgba(240, 46, 69, 0.05) 0px 25px;
+    
+}
+.skills-section .cell:hover{
+    color: rgb(246, 51, 67);
+    border-color: rgb(246, 51, 67);
+    box-shadow: rgba(240, 46, 65, 0.4) 3px 3px, 
+    rgba(240, 46, 85, 0.3) 6px 6px, 
+    rgba(240, 46, 75, 0.2) 9px 9px,
+    rgba(240, 46, 101, 0.1) 12px 12px,
+    rgba(240, 46, 72, 0.05) 15px 15px;
+    transform: scale(1.05);
+    transition: .5s;
+}
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+ /*SECTION 3: Testimony*/
+.testimony-section{
+    margin: 100px;
+    background-color: #171717;
+    backdrop-filter: blur(90px);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 50px;
+    padding: 50px 50px;
+    margin-bottom: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+.testimony-section:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.testimony-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.testimony-section .group{
+    display: flex;
+    align-items: center;    
+    gap: 50px;
+}
+.testimony-section .person-details{
+    text-align: center;
+    flex: 2;
+}
+.testimony-section .text{
+    flex: 8;
+    text-align: justify;
+}
+.testimony-section .headshot{
+    flex: 2;
+}
+.testimony-section img {
+    object-fit: cover;
+    object-position: 0 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(240, 46, 85, 0.4) 15px 15px,
+     rgba(240, 46, 91, 0.3) 20px 20px,
+     rgba(240, 46, 69, 0.2) 25px 25px,
+      rgba(240, 46, 82, 0.1) 30px 30px, 
+      rgba(240, 46, 88, 0.05) 35px 35px;
+}
+.testimony-section img:hover {
+    box-shadow: rgba(240, 46, 82, 0.4) 0px 5px,
+     rgba(240, 46, 98, 0.3) 0px 10px,
+      rgba(240, 46, 91, 0.2) 0px 15px,
+       rgba(240, 46, 104, 0.1) 0px 20px,
+        rgba(240, 46, 69, 0.05) 0px 25px;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.testimony-section img:hover{
+    box-shadow: rgba(240, 46, 98, 0.4) 3px 3px,
+     rgba(240, 46, 56, 0.3) 6px 6px, 
+    rgba(240, 46, 107, 0.2) 9px 9px,
+     rgba(240, 46, 88, 0.1) 12px 12px,
+      rgba(240, 46, 137, 0.05) 15px 15px;
+    transition: 1s;
+}
+.testimony-section p{
+    font-weight: 800;
+}
+.testimony-section p:last-child{
+    font-weight: normal;
+}
+.test-button{
+    font-weight: bold;
+    color: rgb(255, 127, 142);
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-color: rgb(210, 108, 120);
+    font-size: 15px;
+    margin-top: 15px;
+    text-shadow: #1a1c20;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.test-button:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(240, 46, 78, 0.4) 3px 3px,
+     rgba(240, 46, 98, 0.3) 6px 6px, 
+    rgba(240, 46, 101, 0.2) 9px 9px,
+     rgba(240, 46, 56, 0.1) 12px 12px,
+      rgba(240, 46, 72, 0.05) 15px 15px;
+    transition: 1s;
+}
+/*SECTION 4: Contact*/
+.contact-section {
+    margin: 100px;
+    background-color: #171717;
+    backdrop-filter: blur(90px);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 50px;
+    text-align: justify;
+    padding: 50px 50px;
+    margin-bottom: 100px;
+}
+.contact-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+    color: white;
+    font-family: 'Poppins', Arial, sans-serif;
+    border: 2px solid rgb(247, 111, 115);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(233, 109, 140);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+    transition: .1s;
+}
+
+@media(max-width: 1000px){
+    /*HERO SECTION 1*/
+    .hero-section{
+        padding: 100px 100px;
+        background-position: center;
+        object-position: center;
+        flex-direction: column;
+    }
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+    /*SECTION 3: Testimony*/
+    .testimony-section .headshot img{
+        width: 400px;
+        height: 400px;
+    }
+    .testimony-section{
+    text-align: center;
+    }
+    .testimony-section .group{
+    flex-direction: column;
+    }
+    /*SECTION 4: Contact*/
+    .contact-section{
+    flex-direction: column;
+    }
+}
+@media(max-width: 748px){
+    /*HERO SECTION 1*/
+    .hero-section{
+        padding: 100px 100px;
+        background-position: right center;
+        flex-direction: column-reverse;
+    }
+    /*SECTION 3: Testimony*/
+    .testimony-section .headshot img{
+        width: 300px;
+        height: 300px;
+    }
+    .testimony-section{
+    text-align: center;
+    }
+    .testimony-section .group{
+    flex-direction: column;
+    }
+    /*SECTION 4: Contact*/
+    .contact-section{
+    flex-direction: column;
+    }
+}
+@media(max-width: 600px){
+    /*NAV*/
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a span{
+        display: none;
+    }
+    nav .right a:last-child{
+        background-color: transparent;
+        padding: 0;
+    }
+    /*SECTION 1: hero*/
+    .hero-section{
+        background-position: right center;
+        flex-direction: column-reverse;
+        padding: 100px 100px;
+        background-position: right;
+        padding: 100px 100px;
+    }
+    .hero-section .text h2{
+        font-size: 30px;
+    }
+    /* Section 2: skills*/
+    .skills-section{
+        padding: 0 20px;
+    }
+    .skills-section .cells .cell{
+        font-size: 15px;
+    }
+    /*SECTION 4: Contact*/
+    .contact-section{
+    padding: 0 20px;
+    }
+    /*SECTION 3: Testimony*/
+    .testimony-section .headshot img{
+        width: 300px;
+        height: 300px;
+    }
+    .testimony-section{
+    text-align: center;
+    }
+    .testimony-section .group{
+    flex-direction: column;
+    }
+    /*SECTION 4: Contact*/
+    .contact-section{
+    flex-direction: column;
+    }
+}
+
+
